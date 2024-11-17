@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: "postgres:15.2-alpine"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: oktee-db
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - oktee-volume:/var/lib/postgresql/data
+
+volumes:
+  oktee-volume:

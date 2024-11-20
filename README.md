@@ -1,55 +1,42 @@
-# OKTee Test
+# Pokemon Collection App
 
-We are building a Pokemon collection app!
+Web application for collecting Pokemon built with Next.js, TypeScript and PostgreSQL.
 
-The app consists of two pages: Browse and My Collection.
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- PostgreSQL
+- TailwindCSS
+- Pokenode-ts
+
+## Setup
+
+```bash
+# 1. Clone project
+git clone <repo>
+cd pokemon-collection
+
+# 2. Install dependencies
+npm install
+
+# 3. Start database
+docker-compose up -d
+
+# 4. Create environment file
+cp .env.example .env.local
+
+# 5. Run application
+npm run dev
+```
+
+## Tests
+
+```bash
+npm run test
+```
 
 ## Features
 
-### Browse Page
-
-![Browse Page](./src/assets/browse-page.png)
-
-**Objective:**  
-The Browse Page will list all the existing Pokemons.
-
-**Key Features:**
-
-- Display a paginated list of Pokemons
-- Ability to add a Pokemon to your collection
-
-### My Collection Page
-
-![My Collection Page](./src/assets/my-collection-page.png)
-
-**Objective:**  
-The My Collection Page is where users can see all the Pokemon they have added to their collection.
-
-**Key Features:**
-
-- Display a list of Pokemons in your collection
-- Ability to remove a Pokemon from your collection
-
-## Instructions
-
-- NextJS, TypeScript and Postgresql are mandatory, the rest is up to you!
-- A docker-compose file with a postgres container is included in the project, feel free to use it !
-  You can also use your preferred method to set up the database.
-- The collection of Pokemon should be saved in the database.
-- The `pokenode-ts` library to interact with the PokeAPI is already included in the project, but
-  feel free to use whatever method you prefer to fetch the data.
-- The documentation for this library can be found [here](https://pokenode-ts.vercel.app/).
-- You should use the `listPokemons` method for the search page
-
-### Bonus points
-
-- Create an intuitive and user-friendly interface for exploring and collecting Pokemon.
-- Implement responsive design to ensure optimal viewing on all devices.
-- Write some tests to ensure the functionality of the app.
-
-**Setup Instructions:**
-
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Start the application with the command `npm start`.
-4. Open `http://localhost:3000` in your browser to use the app.
+- **Browse Page**: Paginated Pokemon list with collection feature
+- **Collection Page**: Manage your Pokemon collection

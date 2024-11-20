@@ -15,7 +15,7 @@ Web application for collecting Pokemon built with Next.js, TypeScript and Postgr
 ```bash
 # 1. Clone project
 git clone <repo>
-cd pokemon-collection
+cd poke-collection
 
 # 2. Install dependencies
 npm install
